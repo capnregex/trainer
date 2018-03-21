@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.5'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+# Use HAML for views
+gem 'haml-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# use devise for user authentication
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
