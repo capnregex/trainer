@@ -1,0 +1,15 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#menu-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to root_path, class: 'navbar-brand' do
+        Trainer
+    #menu-collapse.collapse.navbar-collapse
+      %ul.nav.navbar-nav#main_nav
+        = render 'main_nav'
+      %ul.nav.navbar-nav.navbar-right#user_nav
+        = render 'user_nav'
