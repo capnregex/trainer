@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Key:
+  = @entry.key
+%p
+  %b Acronym:
+  = @entry.acronym
+%p
+  %b Title:
+  = @entry.title
+%p
+  %b Desc:
+  = @entry.desc
+
+= link_to 'Edit', edit_entry_path(@entry)
+\|
+= link_to 'Back', entries_path
